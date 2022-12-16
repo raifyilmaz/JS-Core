@@ -8,7 +8,13 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\Repository\\JS-Core\\Variables\\index.html"
+            "file": "d:\\Repository\\JS-Core\\JS Loops\\index.html"
+            // "file": "d:\\Repository\\JS-Core\\Conditionals\\index.html"
+            // "file": "d:\\Repository\\JS-Core\\Operators\\index.html"
+            // "file": "d:\\Repository\\JS-Core\\Variables\\index.html"
+            // "file": "d:\\Repository\\JS-Core\\Intro\\index.html"
+
+
         }
     ]
 }

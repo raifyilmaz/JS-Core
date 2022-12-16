@@ -129,7 +129,6 @@ console.log(Boolean(null)); //false
 console.log(null == false);//false
 console.log(null == true);//false
 console.log(null == undefined);//true
-
 /* *** */
 console.log(2 == '2');//true
 console.log(2 === '2');//false
