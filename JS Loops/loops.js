@@ -165,7 +165,10 @@ let str = 'BNTGroup'
 
 // console.log(str.length);
 // console.log(str[7]);
-
-for (let i = 0; i < 8; i++) {
-    console.log(str[i]);   
+// console.log(str[str.length - 1]);// to reach the last statement
+for (let i = 0; i < str.length; i++) {
+    console.log({i},str[i]);
 }
+// for (let i = 0; i < str.length; i++) {
+//     console.log(str[i]);   
+// }
