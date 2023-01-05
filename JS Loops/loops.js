@@ -159,16 +159,99 @@ console.log({i});
 */
 
 
-/*   *************************************************************************************************************************  */
+/*   **************************************************Length Property********************************************************  */
 
-let str = 'BNTGroup'
+// let str = 'BNTGroup'
 
 // console.log(str.length);
 // console.log(str[7]);
 // console.log(str[str.length - 1]);// to reach the last statement
-for (let i = 0; i < str.length; i++) {
-    console.log({i},str[i]);
-}
+// for (let i = 0; i < str.length; i++) {
+//     console.log({i},str[i]);
+// }
 // for (let i = 0; i < str.length; i++) {
 //     console.log(str[i]);   
 // }
+
+/*   ************************************************Break Statement**********************************************************  */
+//To terminate a loop, switch or in conjuction with a label statement, use the break statement. ("jumps out" of a loop.)
+
+/*You can remove comments code and try it!
+var i = 0;
+while (i < 10) {
+    if (i === 3) {
+        break;
+    }
+    i++;
+}
+console.log(3);
+*/
+
+/*   ************************************************Continue Statement*******************************************************  */
+/*If a specified condition occurs, the continuation clause breaks one iteration (in the loop) and continues with the next 
+iteration in the loop. */
+
+/*You can remove comments code and try it!
+var i;
+for (let i = 0; i < 7; i++) {
+    if (i == 2 || i == 4) {
+        continue;
+    }
+    console.log(i);
+}
+*/
+
+/*You can remove comments code and try it!
+// Let's print from 0 to 100 with the for loop, but skip the multiples of 5 and 5.
+
+for(let i = 0; i <= 100; i++){
+    if(i % 5 === 0) {
+        continue;
+    }
+    console.log(i);
+}// we can't print 0, because 0 % 5 = 0. 
+*/
+
+/*You can remove comments code and try it!
+// get rid of the endless loop
+while(true){
+    let x = prompt("Please enter a number: \n You can log out with pressing 'Q'")
+    if(x == "Q" || x == "q"){
+        console.log("logged out.");
+        break;
+    }else if (isNaN(x)) {
+        continue;
+    } else {
+        console.log(`square ${x} = ${x**2}`);
+        break;
+    }
+}
+*/
+
+/*   ************************************************Math.random**************************************************************  */
+
+// console.log(Math.random()*6+1);
+// console.log(Math.trunc(Math.random()*6+1));
+
+// get rid of the endless loop
+let x,y;
+let count = 0;
+let even = 0;
+while (true) {
+    x = Math.trunc(Math.random()*6)+1;
+    y = Math.trunc(Math.random()*6)+1;
+    if (x == 6 && y == 6){
+        count++;
+        console.log(x,y, 'You WON!');
+        break;
+    }else if (x == y && x != 6){
+        even++
+        console.log(x,y,`${even}. even numbered dice.`);
+        if(even === 3){
+            console.log("You LOST!");
+            break;
+        }
+    }
+    console.log(x,y);
+    count++;
+}   
