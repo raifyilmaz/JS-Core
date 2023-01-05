@@ -41,8 +41,8 @@ let i = 0, sum = 0;
 
 while (i < 10) {
     sum += i;
-    i++;
     console.log({i}, {sum});
+    i++;
 }
 console.log(sum);//Output: 45
 */
@@ -133,6 +133,8 @@ for (var i = 0; i < 10; i++){
 var sum = 0;
 for (var i = 0; i < 7; i++) {
     sum += i
+    console.log({i});
+    console.log({sum});
 }
 console.log("the total is: " + sum);
 */
@@ -147,9 +149,23 @@ for (; i < len; ) {
 }
 */
 
+/*You can remove comments code and try it!
 let i = 0;
 for (; i < 8;) {
     console.log(i);
     i++;
 }
 console.log({i});
+*/
+
+
+/*   *************************************************************************************************************************  */
+
+let str = 'BNTGroup'
+
+// console.log(str.length);
+// console.log(str[7]);
+
+for (let i = 0; i < 8; i++) {
+    console.log(str[i]);   
+}
