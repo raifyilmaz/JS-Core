@@ -255,3 +255,5 @@ while (true) {
     console.log(x,y);
     count++;
 }   
+
+console.log(count);

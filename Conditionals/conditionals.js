@@ -279,3 +279,5 @@ if (grade) {
     console.log("You failed.");
 }
 */
+
+// Build a simple calculator with switch case structure
